@@ -1,7 +1,7 @@
 server:
   port: 8080
   address: 127.0.0.1
-  https: true
+  use-forward-headers: true
   
 lavalink:
   server:
