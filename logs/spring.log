@@ -1,0 +1,303 @@
+2024-07-28 16:33:23.693  INFO 1326 --- [main] lavalink.server.Launcher                 : Starting Launcher using Java 11.0.19 on idx-my-lavalink-v3-1722184006528 with PID 1326 (/home/user/my-lavalink-v3/Lavalink.jar started by user in /home/user/my-lavalink-v3)
+2024-07-28 16:33:23.716  INFO 1326 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-07-28 16:33:26.146  INFO 1326 --- [main] lavalink.server.bootstrap.PluginManager  : Downloading https://maven.lavalink.dev/releases/dev/lavalink/youtube/youtube-plugin/1.5.0/youtube-plugin-1.5.0.jar
+2024-07-28 16:33:38.591  INFO 1326 --- [main] lavalink.server.bootstrap.PluginManager  : Found plugin 'youtube-plugin' version 1.5.0
+2024-07-28 16:33:38.683  INFO 1326 --- [main] lavalink.server.bootstrap.PluginManager  : Loaded youtube-plugin-1.5.0.jar (10 classes)
+2024-07-28 16:33:39.171  INFO 1326 --- [main] lavalink.server.Launcher                 : Started Launcher in 17.217 seconds (JVM running for 18.502)
+2024-07-28 16:33:39.183  INFO 1326 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2024-07-28 16:33:39.360  INFO 1326 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.7.11
+	Build time:     10.03.2024 17:31:45 UTC
+	Branch          HEAD
+	Commit:         0aa718c
+	Commit time:    10.03.2024 17:17:40 UTC
+	JVM:            11.0.19
+	Lavaplayer      1.5.3
+
+2024-07-28 16:33:39.408  INFO 1326 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-07-28 16:33:41.490  WARN 1326 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'undertowServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedUndertow.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'undertowServletWebServerFactoryCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedUndertow.class]: Unsatisfied dependency expressed through method 'undertowServletWebServerFactoryCustomizer' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.address' to java.net.InetAddress
+2024-07-28 16:33:41.514 ERROR 1326 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'undertowServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedUndertow.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'undertowServletWebServerFactoryCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedUndertow.class]: Unsatisfied dependency expressed through method 'undertowServletWebServerFactoryCustomizer' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.address' to java.net.InetAddress
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:163) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at lavalink.server.Launcher.launchMain(Launcher.kt:165) ~[classes!/:na]
+	at lavalink.server.Launcher.main(Launcher.kt:127) ~[classes!/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[Lavalink.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'undertowServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedUndertow.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'undertowServletWebServerFactoryCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedUndertow.class]: Unsatisfied dependency expressed through method 'undertowServletWebServerFactoryCustomizer' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.address' to java.net.InetAddress
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:217) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'undertowServletWebServerFactoryCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedUndertow.class]: Unsatisfied dependency expressed through method 'undertowServletWebServerFactoryCustomizer' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.address' to java.net.InetAddress
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:671) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.getWebServerFactoryCustomizerBeans(WebServerFactoryCustomizerBeanPostProcessor.java:87) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.getCustomizers(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:70) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:58) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	... 24 common frames omitted
+Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.address' to java.net.InetAddress
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:92) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:78) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.18.jar!/:5.3.18]
+	... 41 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.address' to java.net.InetAddress
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:384) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:344) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:469) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:95) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:83) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:59) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:473) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:587) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:573) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:534) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:471) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:411) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:329) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:259) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:246) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:95) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:89) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	... 55 common frames omitted
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.net.InetAddress] for value 'https://5000-idx-my-lavalink-v3-1722184006528.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [https://5000-idx-my-lavalink-v3-1722184006528.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47) ~[spring-core-5.3.18.jar!/:5.3.18]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192) ~[spring-core-5.3.18.jar!/:5.3.18]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:109) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:100) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:92) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bindProperty(Binder.java:456) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:400) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	... 71 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Parse attempt failed for value [https://5000-idx-my-lavalink-v3-1722184006528.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/]
+	at org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:223) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.3.18.jar!/:5.3.18]
+	... 78 common frames omitted
+Caused by: java.lang.IllegalStateException: Unknown host https://5000-idx-my-lavalink-v3-1722184006528.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/
+	at org.springframework.boot.convert.InetAddressFormatter.parse(InetAddressFormatter.java:44) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.convert.InetAddressFormatter.parse(InetAddressFormatter.java:31) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:217) ~[spring-context-5.3.18.jar!/:5.3.18]
+	... 79 common frames omitted
+Caused by: java.net.UnknownHostException: https://5000-idx-my-lavalink-v3-1722184006528.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/: Name or service not known
+	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307) ~[na:na]
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1257) ~[na:na]
+	at org.springframework.boot.convert.InetAddressFormatter.parse(InetAddressFormatter.java:41) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	... 81 common frames omitted
+
+2024-07-28 16:33:41.558  INFO 1326 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-07-28 16:33:41.616 ERROR 1326 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.address' to java.net.InetAddress:
+
+    Property: server.address
+    Value: https://5000-idx-my-lavalink-v3-1722184006528.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/
+    Origin: URL [file:application.yml] - 3:12
+    Reason: failed to convert java.lang.String to java.net.InetAddress (caused by java.net.UnknownHostException: https://5000-idx-my-lavalink-v3-1722184006528.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/: Name or service not known)
+
+Action:
+
+Update your application's configuration
+
+2024-07-28 16:34:46.372  INFO 1666 --- [main] lavalink.server.Launcher                 : Starting Launcher using Java 11.0.19 on idx-my-lavalink-v3-1722184006528 with PID 1666 (/home/user/my-lavalink-v3/Lavalink.jar started by user in /home/user/my-lavalink-v3)
+2024-07-28 16:34:46.385  INFO 1666 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-07-28 16:34:48.954  INFO 1666 --- [main] lavalink.server.bootstrap.PluginManager  : Found plugin 'youtube-plugin' version 1.5.0
+2024-07-28 16:34:49.007  INFO 1666 --- [main] lavalink.server.bootstrap.PluginManager  : Loaded youtube-plugin-1.5.0.jar (10 classes)
+2024-07-28 16:34:49.529  INFO 1666 --- [main] lavalink.server.Launcher                 : Started Launcher in 4.828 seconds (JVM running for 6.073)
+2024-07-28 16:34:49.549  INFO 1666 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2024-07-28 16:34:49.741  INFO 1666 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.7.11
+	Build time:     10.03.2024 17:31:45 UTC
+	Branch          HEAD
+	Commit:         0aa718c
+	Commit time:    10.03.2024 17:17:40 UTC
+	JVM:            11.0.19
+	Lavaplayer      1.5.3
+
+2024-07-28 16:34:49.759  INFO 1666 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-07-28 16:34:51.689  WARN 1666 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-28 16:34:51.745  INFO 1666 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-28 16:34:51.746  INFO 1666 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1971 ms
+2024-07-28 16:34:52.059  INFO 1666 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-07-28 16:34:53.094  WARN 1666 --- [main] d.l.youtube.plugin.YoutubePluginLoader   : youtubeConfig missing or 'clients' was not specified, default values will be used.
+2024-07-28 16:34:53.202  INFO 1666 --- [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, WEB, ANDROID_TESTSUITE, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-07-28 16:34:53.610  INFO 1666 --- [main] lavalink.server.config.KoeConfiguration  : OS: LINUX, Arch: X86_64
+2024-07-28 16:34:53.617  INFO 1666 --- [main] lavalink.server.config.KoeConfiguration  : Enabling JDA-NAS
+2024-07-28 16:34:53.631  INFO 1666 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-07-28 16:34:53.646  INFO 1666 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-07-28 16:34:53.686  WARN 1666 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-07-28 16:34:54.351  INFO 1666 --- [main] io.undertow                              : starting server: Undertow - 2.2.16.Final
+2024-07-28 16:34:54.371  INFO 1666 --- [main] org.xnio                                 : XNIO version 3.8.6.Final
+2024-07-28 16:34:54.389  INFO 1666 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.6.Final
+2024-07-28 16:34:54.588  INFO 1666 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2024-07-28 16:34:54.684  INFO 1666 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 5000 (http)
+2024-07-28 16:34:54.703  INFO 1666 --- [main] lavalink.server.Launcher                 : Started Launcher in 5.139 seconds (JVM running for 11.247)
+2024-07-28 16:34:54.710  INFO 1666 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-07-28 16:34:56.974  INFO 1666 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-28 16:34:56.975  INFO 1666 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-28 16:34:56.977  INFO 1666 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-28 16:34:57.020 ERROR 1666 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Authentication failed from /127.0.0.1:60446
+2024-07-28 16:35:29.009 ERROR 1666 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Authentication failed from /127.0.0.1:60446
+2024-07-28 16:36:20.223  INFO 1666 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.16.Final
+2024-07-28 16:36:20.236  INFO 1666 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-28 16:36:20.248  INFO 1666 --- [SpringApplicationShutdownHook] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2024-07-28 16:36:30.364  INFO 2086 --- [main] lavalink.server.Launcher                 : Starting Launcher using Java 11.0.19 on idx-my-lavalink-v3-1722184006528 with PID 2086 (/home/user/my-lavalink-v3/Lavalink.jar started by user in /home/user/my-lavalink-v3)
+2024-07-28 16:36:30.385  INFO 2086 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-07-28 16:36:33.066  INFO 2086 --- [main] lavalink.server.bootstrap.PluginManager  : Found plugin 'youtube-plugin' version 1.5.0
+2024-07-28 16:36:33.165  INFO 2086 --- [main] lavalink.server.bootstrap.PluginManager  : Loaded youtube-plugin-1.5.0.jar (10 classes)
+2024-07-28 16:36:33.716  INFO 2086 --- [main] lavalink.server.Launcher                 : Started Launcher in 5.102 seconds (JVM running for 6.93)
+2024-07-28 16:36:33.724  INFO 2086 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2024-07-28 16:36:33.941  INFO 2086 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.7.11
+	Build time:     10.03.2024 17:31:45 UTC
+	Branch          HEAD
+	Commit:         0aa718c
+	Commit time:    10.03.2024 17:17:40 UTC
+	JVM:            11.0.19
+	Lavaplayer      1.5.3
+
+2024-07-28 16:36:33.965  INFO 2086 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-07-28 16:36:35.958  WARN 2086 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-28 16:36:35.993  INFO 2086 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-28 16:36:35.993  INFO 2086 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2007 ms
+2024-07-28 16:36:36.413  INFO 2086 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-07-28 16:36:37.559  WARN 2086 --- [main] d.l.youtube.plugin.YoutubePluginLoader   : youtubeConfig missing or 'clients' was not specified, default values will be used.
+2024-07-28 16:36:37.662  INFO 2086 --- [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, WEB, ANDROID_TESTSUITE, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-07-28 16:36:38.161  INFO 2086 --- [main] lavalink.server.config.KoeConfiguration  : OS: LINUX, Arch: X86_64
+2024-07-28 16:36:38.162  INFO 2086 --- [main] lavalink.server.config.KoeConfiguration  : Enabling JDA-NAS
+2024-07-28 16:36:38.182  INFO 2086 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-07-28 16:36:38.197  INFO 2086 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-07-28 16:36:38.307  WARN 2086 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-07-28 16:36:38.879  INFO 2086 --- [main] io.undertow                              : starting server: Undertow - 2.2.16.Final
+2024-07-28 16:36:38.905  INFO 2086 --- [main] org.xnio                                 : XNIO version 3.8.6.Final
+2024-07-28 16:36:38.932  INFO 2086 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.6.Final
+2024-07-28 16:36:39.140  INFO 2086 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2024-07-28 16:36:39.354  INFO 2086 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 60446 (http)
+2024-07-28 16:36:39.387  INFO 2086 --- [main] lavalink.server.Launcher                 : Started Launcher in 5.641 seconds (JVM running for 12.601)
+2024-07-28 16:36:39.422  INFO 2086 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-07-28 16:37:05.590  INFO 2086 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.16.Final
+2024-07-28 16:37:05.629  INFO 2086 --- [SpringApplicationShutdownHook] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2024-07-28 16:37:17.553  INFO 2312 --- [main] lavalink.server.Launcher                 : Starting Launcher using Java 11.0.19 on idx-my-lavalink-v3-1722184006528 with PID 2312 (/home/user/my-lavalink-v3/Lavalink.jar started by user in /home/user/my-lavalink-v3)
+2024-07-28 16:37:17.567  INFO 2312 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-07-28 16:37:19.978  INFO 2312 --- [main] lavalink.server.bootstrap.PluginManager  : Found plugin 'youtube-plugin' version 1.5.0
+2024-07-28 16:37:20.022  INFO 2312 --- [main] lavalink.server.bootstrap.PluginManager  : Loaded youtube-plugin-1.5.0.jar (10 classes)
+2024-07-28 16:37:20.403  INFO 2312 --- [main] lavalink.server.Launcher                 : Started Launcher in 4.439 seconds (JVM running for 5.647)
+2024-07-28 16:37:20.408  INFO 2312 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2024-07-28 16:37:20.599  INFO 2312 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.7.11
+	Build time:     10.03.2024 17:31:45 UTC
+	Branch          HEAD
+	Commit:         0aa718c
+	Commit time:    10.03.2024 17:17:40 UTC
+	JVM:            11.0.19
+	Lavaplayer      1.5.3
+
+2024-07-28 16:37:20.621  INFO 2312 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-07-28 16:37:22.807  WARN 2312 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-28 16:37:22.863  INFO 2312 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-28 16:37:22.864  INFO 2312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2206 ms
+2024-07-28 16:37:23.260  INFO 2312 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-07-28 16:37:24.327  WARN 2312 --- [main] d.l.youtube.plugin.YoutubePluginLoader   : youtubeConfig missing or 'clients' was not specified, default values will be used.
+2024-07-28 16:37:24.411  INFO 2312 --- [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, WEB, ANDROID_TESTSUITE, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-07-28 16:37:24.754  INFO 2312 --- [main] lavalink.server.config.KoeConfiguration  : OS: LINUX, Arch: X86_64
+2024-07-28 16:37:24.761  INFO 2312 --- [main] lavalink.server.config.KoeConfiguration  : Enabling JDA-NAS
+2024-07-28 16:37:24.775  INFO 2312 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-07-28 16:37:24.787  INFO 2312 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-07-28 16:37:24.833  WARN 2312 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-07-28 16:37:25.513  INFO 2312 --- [main] io.undertow                              : starting server: Undertow - 2.2.16.Final
+2024-07-28 16:37:25.533  INFO 2312 --- [main] org.xnio                                 : XNIO version 3.8.6.Final
+2024-07-28 16:37:25.558  INFO 2312 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.6.Final
+2024-07-28 16:37:25.751  INFO 2312 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2024-07-28 16:37:25.916  INFO 2312 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 60446 (http)
+2024-07-28 16:37:25.959  INFO 2312 --- [main] lavalink.server.Launcher                 : Started Launcher in 5.537 seconds (JVM running for 11.204)
+2024-07-28 16:37:25.966  INFO 2312 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
