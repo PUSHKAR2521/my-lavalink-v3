@@ -1,14 +1,15 @@
 # Use an official OpenJDK runtime as a parent image
-FROM openjdk:11-jre-slim
+FROM openjdk:17-jdk-slim
 
-# Set the working directory in the container
-WORKDIR /app
+# Set the working directory
+WORKDIR /usr/src/lavalink
 
-# Copy the Lavalink JAR file into the container
-COPY Lavalink.jar /app
+# Copy the Lavalink jar and configuration files into the container
+COPY Lavalink.jar Lavalink.jar
+COPY application.yml application.yml
 
-# Expose the port that Lavalink will run on
+# Expose the Lavalink default port
 EXPOSE 5000
 
-# Run Lavalink
+# Command to run Lavalink
 CMD ["java", "-jar", "Lavalink.jar"]
