@@ -2,6 +2,8 @@ server:
   port: 5000
   # address: 127.0.0.1
   address: 0.0.0.0
+  http2:
+    enabled: true # Whether to enable HTTP/2 support
 lavalink:
   server:
     password: "youshallnotpass"
@@ -19,7 +21,7 @@ lavalink:
       channelMix: true
       lowPass: true
   plugins:
-    - dependency: "dev.lavalink.youtube:youtube-plugin:1.8.3"
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.1"
       repository: "https://maven.lavalink.dev/releases"
       youtube:
         ipBlock:
